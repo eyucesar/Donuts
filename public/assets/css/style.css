@@ -1,0 +1,104 @@
+* {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+body {
+	margin-top: 20px;
+	background-image: url("donut1.png");
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+h1 {
+	background: white;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 24px;
+	font-weight: bolder;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+h2 {
+	text-align: center;
+	background: white;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-top: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.create-update-form {
+	text-align: center;
+	background: white;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 40px;
+	border-radius: 10px;
+}
+
+.form-group {
+	width: 95%;
+}
+
+.form-control {
+	height: 70px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+label {
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.donuts {
+	background-color: white;
+	padding: 10px 20px 10px 20px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.btn-success {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.eaten {
+	height: 40px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.indvDonut {
+	padding: 10px 10px 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 20px 5px 10px 5px;
+	background-color: #eee;
+}
+
+p {
+	font-size: 14px;
+	display: inline-block;
+	font-weight: bolder;
+}
+
+.btn-danger {
+	padding: 8px 20px 8px 20px;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+footer {
+	margin-bottom: 20px;
+	color: white;
+	font-weight: bolder;
+}

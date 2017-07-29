@@ -1,0 +1,53 @@
+  <div class="row">
+      <div class="col-sm-4 col-md-4"></div>
+        <div class="col-sm-4 col-md-4">
+          <h1>Create Your Dream Donut!</h1>
+        </div>
+      <div class="col-sm-4 col-md-4"></div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-2 col-md-2"></div>
+        <div class="col-sm-4 col-md-4">
+          <h2>Currently Available</h2>
+            <div class="donuts">
+              {{#each donuts}}
+                {{#unless this.eaten}}
+                    <div class="indvDonut"><p>{{this.id}}. {{this.name}}</p>
+                      <form action="/{{this.id}}?_method=PUT" method="POST">
+                        <input type="hidden" name="eaten" value="true">
+                        <button type="submit" class="btn btn-success">Eat Me!</button>
+                      </form>
+                    </div>
+                {{/unless}}
+              {{/each}}
+            </div>
+        </div>
+      <div class="col-sm-4 col-md-4">
+        <h2>Eaten</h2>
+            <div class="donuts">
+              {{#each donuts}}
+                {{#if this.eaten}}
+                  <input class="form-control eaten" type="text" placeholder="{{this.name}}" disabled>
+                {{/if}}
+              {{/each}}
+            </div>
+      </div>
+      <div class="col-sm-2 col-md-2"></div>
+  </div>
+
+  <div class="row">
+      <div class="col-sm-3 col-md-3"></div>
+        <div class="col-sm-6 col-md-6">
+          <form class="create-update-form" action="/" method="POST">
+            <div class="form-group">
+              <label for="ca"><br>Describe the donut you would like to eat:</label>
+              <textarea type="text" rows="3" id="ca" name="name" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+        </div>
+      <div class="col-sm-3 col-md-3"></div>
+  </div>
+
+  <br><footer class="footer text-center">&copy;2017 Ebru Yucesar</footer>

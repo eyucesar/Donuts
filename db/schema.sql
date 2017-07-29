@@ -1,0 +1,10 @@
+CREATE DATABASE donuts_db;
+USE donuts_db;
+
+CREATE TABLE donuts
+(
+	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name varchar(255) NOT NULL,
+	eaten BOOLEAN DEFAULT false,
+	added_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
